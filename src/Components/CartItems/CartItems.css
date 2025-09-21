@@ -1,0 +1,169 @@
+.cartitems {
+    margin: 50px 100px;
+    padding-top: 12vh;
+
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    color: #454545;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.format-img {
+    height: 60px;
+}
+
+.cartitem-format {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.remove-icon-fromcart {
+    width: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.remove-icon-fromcart:hover {
+    background: rgb(19, 18, 18);
+}
+
+.cartitems-quantity {
+    width: 40px;
+    height: 35px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+
+.cartitem-down {
+    display: flex;
+    margin: 100px 0;
+}
+
+.cartitem-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cartitem-total-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.cartitem-total h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.cartitem-total h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.cartitem-total button {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* MEDIA QUEURIES FOR CARTITEMS COMPONENT*/
+@media(max-width:1280px) {
+    .cartitems {
+        margin: 40px 60px;
+    }
+
+    .cartitems-format-main {
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .cartitems-format-main {
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+        font-size: 13px;
+    }
+}
+
+
+
+/* Mobile (below 600px) */
+@media (max-width: 600px) {
+    .cartitems-header {
+        display: none;
+    }
+
+    .cartitems-format-main {
+        grid-template-columns: 60px 1fr;
+        /* image + everything else */
+        row-gap: 10px;
+        text-align: left;
+    }
+
+    .cartitems-format-main {
+        grid-template-columns: 60px 1fr;
+        /* image + everything else */
+        row-gap: 10px;
+        text-align: left;
+    }
+
+    .cartitems-format-main p {
+        white-space: normal;
+        /* allow wrapping */
+        word-wrap: break-word;
+        /* break long titles */
+        font-size: 12px;
+    }
+
+    .cartitems-quantity {
+        width: 25px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cartitem-total h1 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .cartitem-total h3 {
+        font-weight: 500;
+    }
+
+    .cartitem-total-items p {
+        font-size: .8rem;
+
+    }
+
+    .remove-icon-fromcart {
+    width: 10px;
+    margin: 5px 2px;
+}
+
+    .cartitem-total button {
+        width: 150px;
+        height: 40px;
+        font-size: 11px;
+    }
+}
